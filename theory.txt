@@ -1,0 +1,60 @@
+Javascript
+-------------
+->It  is a programming language that allows us to implement complex feaute of the web pages.
+->HTML-it is a markup language that we use to structure and giving meaning to our web content.
+->CSS-it is a language of style rules that used to apply styling to our Html Content.
+->Javascript-It is scripting language that enables you to create dynamically updating content.
+->Syntax Parser:it is a program that reads your code and findout your code is valid or not.
+->Lexical Envirenment:Where something sits physically in the code you write.
+ex:f1unction(){
+    anklmdjdj1
+    kmondkmld1
+    cedeklmnd
+}
+->Execution Context:
+  A wrapper to help manage the code that is running.
+  lexical 1
+  lexical 2
+  lexical 3
+  for e.g There are lots of lexical Envirenment which one is currently running is managed by Execution context.
+  Name/Value pairs
+  -----------------
+  A name which maps to a unique value(name:'santanu')
+  ->Object:
+   A collectin of these value pare is called object.
+   ->what is global Envirenment and Global object?
+   Ans:When ever code is running inside Javascript it runs inside an Execution context..
+   ->Javascript Execution engine creating two things for us.
+   (1)Global Object
+   (2)This
+   ->why we are using console.log?
+   ans:it is the one which will help you to write to your output to your console window.
+  Hoisting:
+  -----------
+  When we declair variable and function in Javascript the exection engine sets up a memory space for variable and function .
+  if it a variable i will assign default value is called undefined and if it is a function i will copy the entire function.
+  and keep in the memory.
+  Ex:b();
+  console.log(a)
+  var a="hello world"
+  function b(){
+      console.log("called b")
+  }
+  output:called b
+         undefined
+
+undefined:
+it is special value in javascript.
+
+Difference between (==,===):
+------------------------------
+->==:Check for value(a=10)
+->===:check for value and type
+ex:var a="10"
+   console.log(a===10)
+   output:false
+->==if a is 10 or not checking if a is a number or string
+=>===if a is 10 and a is an integer
+
+
+
