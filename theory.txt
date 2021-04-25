@@ -45,6 +45,8 @@ ex:f1unction(){
 
 undefined:
 it is special value in javascript.
+warning:Never ever declair a variable undefined,because it is different to find
+value is 'undefined'because we set it or javascript exection engine set it up.
 
 Difference between (==,===):
 ------------------------------
@@ -55,6 +57,104 @@ ex:var a="10"
    output:false
 ->==if a is 10 or not checking if a is a number or string
 =>===if a is 10 and a is an integer
+   Types:
+-----------
+Dynamic Typing:
+----------------
+You don't tell the engine what type of data a variable holds,it figures out while code is running.
+based on the data it will try to decide type.
+ex: var a="santanu"
+        a=1;
+        a={}
+        a=[]
+        a=function(){}
+console.log(typeof a)
+
+Strict Typing:
+--------------
+c# or java follows strict typing.
+
+Prmitive Types:
+---------------
+A types of data that represent a single value is called Prmitive data type.
+1.undefined-This represent lack of existance(we should never use This)
+2.null-This represent lack of existance(We can set a variable to This)
+3.Boolean-true or false
+4.integer/floating type(decimal)
+5.string-a sequence of character
+6.Symbol-used in ES6
+Function:
+----------
+it is a block of code wrapped around flower brackets and invocated later.
+Ex:function functionname(){
+
+}
+Types of functions:
+---------------------
+(1)Regular Function
+(2)Anonymous Function
+(3)Immediately Invoked function(IIFS)
+
+About Regular Function:
+--------------------------
+Ex:function sayHello(){
+    console.log('santanu')
+}
+sayHello();
+
+function getFullName(firstName,lastName){
+    return firstName+''+lastName
+}
+var FullName=getFullName('Santanu','Paikaray');
+console.log(fullName)
+
+function test(){
+    return undefined
+    return null
+    return 1
+    return "santanu"
+    return true
+    return {}
+    return []
+    return function(){}
+}
+var output=test();
+console.log(output)
+Anonymous Function:
+----------------------
+Function without any name is called Anonymous function.
+ex:
+  var sample = function (){
+
+  }
+var output=sample()
+console.log(output)
+First Class Function:
+---------------------
+(1)Can be Invoked
+(2)assign to a variable
+(3)Passed as parameter to another variable
+
+var timeoutfunction=function(){
+    console.log('This will be printed after three seconds')
+}
+setTimeout(timeoutfunction,6000)
+->What is callback function?
+Ans:Function passing to the parameter to the parameter to another function
+is called callback.
+Immediately Invoke Function:
+-----------------------------
+var sample=(function (){
+    console.log("This is sample function")
+    return 1
+
+})()
+console.log(sample)
+->if you are wrapping your function around parenthesis trying to Invoke it Immediately that is called Immediately Invoke function.
+->it is just similar to anonymous function but the Difference is it is wrapped around parenthesis.
+
+
+
 
 
 
