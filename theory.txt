@@ -152,7 +152,77 @@ var sample=(function (){
 console.log(sample)
 ->if you are wrapping your function around parenthesis trying to Invoke it Immediately that is called Immediately Invoke function.
 ->it is just similar to anonymous function but the Difference is it is wrapped around parenthesis.
+Objects:
+----------
+->An Object is a collectin of name value pairs.
+->If you have two flower brackets() in javascript that means you are deals with object.
+->How to create an object?
+First i will create a variable
+var person=new object();
+console.log(person)
+How to pass property to my object.
+person["firstName"]="Santanu"
+person["lastName"]="Paikaray"
 
+Using Dot Notation:
+------------------------
+By using dot Notation we can represent our object also.
+console.log(person.firstName)
+console.log(person.lastName)
+Object-literial:-
+------------------
+var person={};
+console.log(person)
+->Having two flower brackets is object literial Syntax.
+->When your function inside the object that become method.
+ex:var person={
+    id:1
+    firstName:"santanu"
+    lastName:"Paikaray"
+    getDetails:function(){
+
+    }
+}
+console.log(person)
+->primitive types inside an object are called properties.
+
+Object.create() method creates a new object using an existing object or null
+as the protoype for newly created object
+
+var person = Object.create(null)//create an empty/null object
+var person = object.create({})//create a normal function
+
+JSON:
+------
+->it is a javascript object Notation.
+->Inspired by the object literral Notation.
+->Earler how to pass the data to our server is 
+<data>
+<firstName>Santanu</firstName>
+<lastName>Paikaray</lastName>
+</data>
+->Now day we are pasing data to our server is 🥿
+JSON:
+-----------
+common usage of json is to exchange data to/from webserver.
+{
+    "firstName":"Santanu"
+    "lastName":"Paikaray"
+}
+Object:
+----------
+{
+    firstName:"Santanu"
+    lastName:"Paikaray"
+}
+->Anything which is JSON valid is object literial.
+JSON.stringify-converts a javascript value into
+seriazlied string.
+
+Difference between stringify and parser:
+-------------------------------------------
+stringify:it will serialize your object and convert into string.
+Parser:it will deserialze your object and convert into json object.
 
 
 
