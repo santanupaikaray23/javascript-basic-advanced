@@ -224,6 +224,49 @@ Difference between stringify and parser:
 stringify:it will serialize your object and convert into string.
 Parser:it will deserialze your object and convert into json object.
 
+Arrays:
+-------
+->it is an object that can store a collectin of items.
+->it is usefull when you want to store large amount of data.
+
+This is Array literial:
+---------------------------
+var students=["santanu","sunita","surekha","pradeep"]
+This is new array array literial:
+----------------------------------
+var People=new array("uma","santanu","lucky","urmi")
+
+ex:
+var array=new Array(5);
+array[0]="Uma"
+array[1]="Santanu"
+array[2]="lucky"
+array[3]="Happy"
+array[4]="Sidhanta"
+
+console.log(array)
+console.log(array[0])
+console.log(array[1])
+console.log(array[2])
+console.log(array[3])
+console.log(array[4])
+var fruits = new Array ("Orange","Apple","Banana","Gurva")
+var vegetables=new Array("Potato","Tomato","Egg plant",)
+->What is difference between foreach and map?
+Ans:Map return the value .if we will use for each we can't return the value.
+
+Closure:
+----------
+Inner function having access to the variables of outer function.
+
+Bind vs Call vs apply:
+----------------------
+Bind-sets 'this' keyword and creates a copy of that function
+call-sets 'this' keyword and execute the function Immediately and 
+doesn't create a new copy of the function,it takes comma seperated values.
+apply-sets 'this' keyword, smilar to call 
+
+
 
 
 
