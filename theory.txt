@@ -257,7 +257,32 @@ Ans:Map return the value .if we will use for each we can't return the value.
 
 Closure:
 ----------
-Inner function having access to the variables of outer function.
+->Inner function having access to the variables of outer function.
+->Child function having access to the parent function variable is called closure.
+EX-1:function greet(message){
+    return function (name){
+        return message+' '+name
+    }
+}
+var sayHello=greet("Hello");
+console.log(say Hello)
+console.log(sayHello("sayHello"))
+Ex-2:
+------
+function greet(message){
+    return function(firstName){
+    return function(lastName){
+    return function(city){
+        return message +''+
+        firstName +''+
+        lastName +''+
+        city
+
+    }
+}
+}
+}
+console.log(greet("Hello")('Santanu')('ch')('Germany'))
 
 Bind vs Call vs apply:
 ----------------------
@@ -266,7 +291,74 @@ call-sets 'this' keyword and execute the function Immediately and
 doesn't create a new copy of the function,it takes comma seperated values.
 apply-sets 'this' keyword, smilar to call 
 
+->Rember Every finction in javascript will have called access to this 3methods.
+(i)Bind(ii)Call(iii)Apply
+Example:-
+-------------
+var person1={firstName:'santanu',lastName:'paikaray'}
+var person2={firstName:'sidhanta',lastName:'paikaray'}
+var person3={firstName:'sipun',lastName:'paikaray'}
+var person4={firstName:'sandeep',lastName:'paikaray'}
 
+function getName(message,city){
+    return message + ' from ' + city + ' to ' + this.firstName +' '+ this.lastName
+}
+var bindMessage = getName.bind(person1)
+console.log(bindMessage('Hello','Telangapada'))
+
+var bindMessage = getName.bind(person2)
+console.log(bindMessage('Hello','Telangapada'))
+
+var callMessage = getName.call(person3,'Hello','Boston')
+console.log(callMessage)
+
+var applyMessage=getName.apply(person4,['Hello','Boston'])
+console.log(applyMessage)
+Remember:
+-----------
+->This call,Bind And apply are the method which are by default avalable to any 
+function.
+->This method can be used to set 'this' keyword.
+This:-
+--------
+This function is inside an abject the value of this is this  that object.
+->If function has another fnction this value becomes object.
+Every Object has three method:
+-------------------------------
+(1)Object.PreventExtensions
+(2)Object.seal()
+(3)Object.freeze()
+(1)Object.PreventExtensions:
+-------------------------------
+Here we can edit and delete the properties but can't add new properties.
+(2)Object.seal()
+------------------
+we can adit the properties but we can't add new properties or can't delete existing properties.
+(3)Object.freeze()
+-------------------
+We can't add ,edit and delete the properties.
+
+Class:-
+--------
+Javascript is a prototype-based language which contains no class statement such as is found in c# or java.
+Javascript uses function as  a class.
+e.x. function student(){
+
+}
+instance:-
+------------
+
+
+
+
+
+
+Inheritance:-
+---------------
+->One object get access to the properties and methods of another abject.
+->In other words child can able to acces to properties of parents.
+->In Javascript Inheritance is supported by using protoype object.This is also called prototyple Inheritance.
+ 
 
 
 
