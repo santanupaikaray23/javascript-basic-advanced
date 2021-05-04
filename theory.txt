@@ -337,29 +337,79 @@ we can adit the properties but we can't add new properties or can't delete exist
 (3)Object.freeze()
 -------------------
 We can't add ,edit and delete the properties.
-
-Class:-
---------
-Javascript is a prototype-based language which contains no class statement such as is found in c# or java.
-Javascript uses function as  a class.
-e.x. function student(){
-
-}
-instance:-
+properties:
 ------------
+function customer(gender){
+    this.gender=gender
+}
+var customer1=new customer('Male')
+var customer2=new customer('Female')
+->By the help of 'this' keyword we can findout properties of your class.
+ ex of class:
+ ------------
+ function Student(){
 
+ }
+ ex of instance:
+ ----------------
+ function Person(){
 
+ } 
+ var person1=new person();
+ var person2=new person();
 
+ ex of constructor:
+ -------------------
+ function Order(){
+     console.log('order is placed')
+ }
+ var order=new order();
+ ex of properties:
+ -----------------
+ function Customer(gender){
+     this.gender = gender
+ }
+ var  Customer1=new Customer('Female');
+ var Customer2=new Customer('Male')
 
+ protoype:
+ ---------
+ The protoype is an object that is associated with every functions and object in javascript .
+ ->This is a special type of object to which additional properties and method can be attached.
+ ->Which will shared accross all the instances of its constructor function.
 
+Inheritance:
+------------
+One Object get access to the properties and methods of another object.
+In javascript Inheritance is supported by using prototype object.This is also called prototypal Inheritance.
+Note:
+------
+->Prototype is the one which allow to extends method and properties of our class.
+->Prototype is the keyword which will help us to implement Inheritance.
+->Here in javascript instade of class we are using function.
+->Multiple Inheritance is also possible in Javascript.
 
-Inheritance:-
----------------
-->One object get access to the properties and methods of another abject.
-->In other words child can able to acces to properties of parents.
-->In Javascript Inheritance is supported by using protoype object.This is also called prototyple Inheritance.
+Polymorphism:
+--------------
+It means function existing in many forms.
  
+ In programming,the ability for object to present the same interface for different hehaviour.
+Error-handling:
+---------------
+it helps us to handle the error exspecially runtime,for accessing undefined variables or undefined functions.
+How to handle the error?
+------------------------
+By using try-catch-finally
 
+try{
+    //code that may or may not throw error
+}
+catch{
+    //code to be executed if an error occure
+}
+finally{
+    //code to be executed requireless of an error occure or not
+}
 
 
 
