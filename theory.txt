@@ -411,5 +411,42 @@ finally{
     //code to be executed requireless of an error occure or not
 }
 
+There are two types of design patterns
+---------------------------------------
+(1)singleton-pattern
+(2)Modular-pattern
+singleton design pattern:
+-------------------------
+->Limit the number of instances of  a perticular object to just one.
+->singletons are usefull in Stuations where system wide actions needs to be coordinated from a single
+center place.
+Exp:Database connection pool
+The pool that manages the creation,destruction and lifetime of all database connections for the entire application.
+->Basically we are using singleton design pattern for database connection.
+Ex:var singleton=(function(){
+    var instance=null;
 
+    var createInstance=function(){
+        var obj=Object.create(null)
+        console.log('Object is created')
+        return obj;
+    }
+    return{
+        getInstance:function(){
+            if(!instance){
+                instance=createInstance();
+            }
+            return instance;
+        }
+    }
+
+})();
+var singleton1 = singleton.getInstance();
+console.log(singleton1);
+var singleton2=singleton.getInstance();
+console.log(singleton2)
+var singleton3=single.getInstance();
+console.log(singleton3)
+var singleton4=singleton.getInstance();
+console.log(singleton4)
 
