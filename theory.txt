@@ -106,7 +106,7 @@ function getFullName(firstName,lastName){
     return firstName+''+lastName
 }
 var FullName=getFullName('Santanu','Paikaray');
-console.log(fullName)
+console.log(FullName)
 
 function test(){
     return undefined
